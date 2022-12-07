@@ -1,14 +1,12 @@
-from django.shortcuts import render
 from rest_framework.views import APIView, Response, Request, status
 from .utils import readCSV
 from .serializers import CessaoSerializer
+import ipdb
 
 class ReadCSVView(APIView):
     def post(self, request:Request):
-        bucket_name = request.data.bucket_name
-        object_key = request.data.object_key
-        
-        data = readCSV(object_key, bucket_name)
+        #ipdb.set_trace()
+        data = readCSV(request.data)
         
         objects = []
         

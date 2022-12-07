@@ -1,9 +1,10 @@
 import pandas as pd
 import boto3
 
-def readCSV(object_key, bucket_name):
-    bucket = bucket_name
-    file_name = object_key
+def readCSV(data):
+    
+    bucket = data['bucket_name']
+    file_name = data['object_key']
 
     s3 = boto3.client('s3') 
 

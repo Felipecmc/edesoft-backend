@@ -16,7 +16,7 @@ def readCSV(data):
 
     obj = s3.get_object(Bucket= bucket, Key= file_name)
 
-    dataFrame = pd.read_csv(obj['Body'])
+    dataFrame = pd.read_csv(obj['Body'], sep= ';')
     
     list = dataFrame.values.tolist()
     

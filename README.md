@@ -16,7 +16,7 @@ Para rodar o serviço basta seguir os seguintes passos
 
 -na rota /api/csv/ deve ser feito um post com os argumentos "bucket_name" e "object_key" para fazer a leitura e tratamento de arquivos csv que tenham o padrão do exemplo fornecido
 
--na rota /api/local-csv/ deve ser feito um post para ler e tratar arquivos locais que tenham o mesmo padrão do exemplo fornecido
+-na rota /api/local-csv/ deve ser feito um post com o atributo "nome_arquivo" contendo o nome do arquivo local para ler e tratar arquivos locais que tenham o mesmo padrão do exemplo fornecido
 
 #Disclaimer
 

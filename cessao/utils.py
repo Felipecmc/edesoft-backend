@@ -21,3 +21,10 @@ def readCSV(data):
     list = dataFrame.values.tolist()
     
     return list
+
+
+def read_csv(data):
+    nome_arquivo = data['nome_arquivo']
+    df = pd.read_csv(nome_arquivo , sep=";")
+    list = df.values.tolist()
+    return list
